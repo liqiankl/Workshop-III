@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "name": "Mumbai",
+    "saleoff": "50%",
+    "time": "Jan 2021",
+    "price": "₹2,250",
+    "priceOriginal": "₹4,2999",
+    "image": ""
+  },
+  {
+    "id": "2",
+    "name": "Pune",
+    "saleoff": "55%",
+    "time": "Feb 2021",
+    "price": "₹2,250",
+    "priceOriginal": "₹4,2999",
+    "image": ""
+  },
+  {
+    "id": "3",
+    "name": "Delhi",
+    "saleoff": "55%",
+    "time": "Feb 2021",
+    "price": "₹2,250",
+    "priceOriginal": "₹4,2999",
+    "image": ""
+  }
+]
