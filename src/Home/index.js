@@ -10,7 +10,9 @@ import {
   } from 'react-native';
 import { ScrollView, TextInput } from 'react-native-gesture-handler';
 import Entypo from 'react-native-vector-icons/Entypo';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Background from '../components/Background';
 
 
@@ -19,8 +21,9 @@ const Home=()=>{return(
    <>
       <StatusBar barStyle="dark-content" />
       <View style={styles.container}>
-        <Background style={styles.svg} />
-        <ScrollView style={styles.scrollView}>
+      <ScrollView style={styles.scrollView}>
+        {/* <Background style={styles.svg} /> */}
+       
           <View style ={styles.headerContainer}>
         <View style ={styles.headerIndicator}>
           <View style ={styles.headerIndicatorLeft}>
@@ -39,10 +42,21 @@ const Home=()=>{return(
             <TextInput 
             style={styles.inputSearch}
             value= "New York City(JFK)"/>
-            <TouchableOpacity   style={styles.buttonSearch}>
-            
+            <TouchableOpacity style={styles.buttonSearch}>
+            <Feather name ='search' color='grey' size={20}/>
             </TouchableOpacity>
           </View>
+        </View>
+        <View style={styles.listButton}>
+          <TouchableOpacity style={styles.button}>
+            <Ionicons name ='airplane' color='#000' size={20}/>
+            <Text>Flights</Text>
+            </TouchableOpacity>   
+            <TouchableOpacity style={styles.button}>
+            <FontAwesome name ='hotel' color='#000' size={20}/>
+            <Text>Hotels</Text>
+            </TouchableOpacity>       
+
         </View>
         </View>
         </ScrollView>
@@ -59,7 +73,7 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       position: 'relative',
-      backgroundColor: 'white',
+      backgroundColor: 'pink',
     },
     svg: {
       position: 'absolute',
@@ -86,7 +100,7 @@ const styles = StyleSheet.create({
       padding:10,
     },
     inputSearchContainer:{
-      backgroundColor: 'pink',
+      backgroundColor: 'white',
       flexDirection:'row',
       alignItems:'center',
       borderRadius:25,
@@ -98,7 +112,29 @@ const styles = StyleSheet.create({
       color: 'grey',
       flex:1,
     },
-    buttonSearch:{},
+    buttonSearch:{
+      shadowColor:'#222',
+      shadowOffset:{width: 0 , height: 2},
+      shadowOpacity: 0.5,
+      padding: 10,
+      borderRadius:30,
+      aspectRatio:1,
+      backgroundColor: '#fff'
+    },
+    listButton:{
+      flexDirection:'row',
+      justifyContent: 'space-evenly',
+      marginTop: 20,
+    
+    },
+    button:{
+      flexDirection:'row',
+      backgroundColor:'#fff',
+      padding: 10,
+      paddingHorizontal:15,
+      borderRadius: 20,
+   
+    },
    
     
   });
