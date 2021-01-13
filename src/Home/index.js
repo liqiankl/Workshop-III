@@ -10,20 +10,24 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
-import {Card, ListItem, Button, Icon} from 'react-native-elements';
+
+//Additional icons imported
 import Entypo from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+
+//Component Imported-----
 import Background from '../components/Background';
+import ListCard from './ListCard';
 
 const Home = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <View style={styles.container}>
+        <Background style={styles.svg} />
         <ScrollView style={styles.scrollView}>
-          <Background style={styles.svg} />
           <View style={styles.headerContainer}>
             <View style={styles.headerIndicator}>
               <View style={styles.headerIndicatorLeft}>
@@ -35,7 +39,7 @@ const Home = () => {
                 <Feather name="settings" color="#fff" size={20} />
               </View>
             </View>
-            <Text style={styles.header}>{`Where would you want to go?`}</Text>
+            <Text style={styles.header}>{`Where would \nyou want to go?`}</Text>
             <View style={styles.inputContainer}>
               <View style={styles.inputSearchContainer}>
                 <TextInput
@@ -58,6 +62,7 @@ const Home = () => {
               </View>
             </View>
           </View>
+          <ListCard />
         </ScrollView>
       </View>
     </>
@@ -68,17 +73,18 @@ const styles = StyleSheet.create({
   scrollView: {
     flex: 1,
   },
-  // svg: {
-  //   width: Dimensions.get('window').width,
-  // },
+  svg: {
+    position: 'absolute',
+    width: Dimensions.get('window').width,
+  },
   container: {
     flex: 1,
     position: 'relative',
     backgroundColor: 'white',
   },
   headerContainer: {
-    marginTop: 20,
-    padding: 10,
+    marginTop: 0,
+    padding: 15,
   },
   headerIndicator: {
     flexDirection: 'row',

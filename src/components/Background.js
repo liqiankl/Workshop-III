@@ -21,10 +21,10 @@ export default Background;
 const styles = StyleSheet.create({
   viewAbove: {
     backgroundColor: '#9700fb',
-    height: 370,
+    height: 300,
   },
   svg: {
     position: 'absolute',
-    top: 320,
+    top: 260,
   },
 });
