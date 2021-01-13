@@ -1,15 +1,16 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Text, Image, StyleSheet, Dimensions} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 import mocks from './mocks.json';
 
-const items =({item})=>{
+const W = Dimensions.get('window').width;
+const Items =({item})=>{
  return(
    <View style={styles.elementsContainer}>
-     <View style={styles.image}>
-       <Image />
+     <View style={styles.imageBox}>
+       <Image style={styles.image}/>
        <View style={styles.innerElements}>
         <View>
         <Text style={styles.elementsName}>{item.name}</Text>
@@ -35,10 +36,13 @@ const ListCard = () => {
       <View style={styles.container}>
         <View style={styles.header}>
           <Text style={styles.text}>Currently Watched Items</Text>
-          <Text>View All(12)</Text>
+          <Text style={[styles.text, {color:'purple'}]}>VIEW ALL(12)</Text>
         </View>
-        <ScrollView>
-
+        <ScrollView horizontal>
+          {mocks.map(item => {
+            return <Items key={item.id} item={item}/>
+          })}
+         
         </ScrollView>
       </View>
     </>
@@ -64,8 +68,20 @@ const styles= StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 15,
     color: '#222',
+
   },
-  image:{},
+  imageBox:{
+    flex:1,
+    borderRadius: 30,
+    overflow: 'hidden',
+    backgroundColor: 'pink',
+
+  },
+  image:{
+    width: (W - 20)/2,
+    height: (W - 40)/2 + 30,
+    backgroundColor: 'pink',
+  },
   elementsContainer:{},
   innerElements:{},
   elementsName:{},

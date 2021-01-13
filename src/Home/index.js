@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.5,
     shadowRadius: 12,
     backgroundColor: '#fff',
-    padding: 10,
+    padding: 15,
     borderRadius: 30,
     aspectRatio: 1,
   },
@@ -149,6 +149,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignSelf: 'center',
     marginTop: 20,
+    padding: 30,
   },
 });
 
