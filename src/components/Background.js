@@ -1,10 +1,10 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import Svg, { Path} from 'react-native-svg';
+import Svg, {Path} from 'react-native-svg';
 
 const Background = ({style}) => {
   return (
-     <View style={style}>
+    <View style={style}>
       <View style={styles.viewAbove} />
       <Svg height="50%" width="100%" style={styles.svg} viewBox="0 0 1440 320">
         <Path
@@ -21,10 +21,10 @@ export default Background;
 const styles = StyleSheet.create({
   viewAbove: {
     backgroundColor: '#9700fb',
-    height: 350,
+    height: 370,
   },
   svg: {
     position: 'absolute',
-    top: 300,
+    top: 320,
   },
 });

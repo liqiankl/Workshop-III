@@ -10,27 +10,26 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
-import { Card, ListItem, Button, Icon } from 'react-native-elements'
+import {Card, ListItem, Button, Icon} from 'react-native-elements';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Background from '../components/Background';
 
-const Home=()=>{return(
-   <>
+const Home = () => {
+  return (
+    <>
       <StatusBar barStyle="dark-content" />
       <View style={styles.container}>
-      <ScrollView style={styles.scrollView}>
-      <Background style={styles.svg} />
+        <ScrollView style={styles.scrollView}>
+          <Background style={styles.svg} />
           <View style={styles.headerContainer}>
             <View style={styles.headerIndicator}>
               <View style={styles.headerIndicatorLeft}>
-              <Entypo name ='location-pin' color='#fff' size={20}/>
-                <Text style={styles.headerIndicatorText}>
-                  Boston (BOS)
-                </Text>
-                <Entypo name ='chevron-down' color='#fff' size={20}/>
+                <Entypo name="location-pin" color="#fff" size={20} />
+                <Text style={styles.headerIndicatorText}>Boston (BOS)</Text>
+                <Entypo name="chevron-down" color="#fff" size={20} />
               </View>
               <View style={styles.headerIndicatorRight}>
                 <Feather name="settings" color="#fff" size={20} />
@@ -43,9 +42,7 @@ const Home=()=>{return(
                   style={styles.inputSearch}
                   value="New York Citi (JFK) "
                 />
-                <TouchableOpacity
-                  style={styles.buttonSearch}
-                 >
+                <TouchableOpacity style={styles.buttonSearch}>
                   <Feather name="search" color="grey" size={20} />
                 </TouchableOpacity>
               </View>
@@ -63,25 +60,24 @@ const Home=()=>{return(
           </View>
         </ScrollView>
       </View>
-   </>);
-
+    </>
+  );
 };
 
 const styles = StyleSheet.create({
   scrollView: {
     flex: 1,
   },
+  // svg: {
+  //   width: Dimensions.get('window').width,
+  // },
   container: {
     flex: 1,
     position: 'relative',
     backgroundColor: 'white',
   },
-  svg: {
-    position: 'absolute',
-    width: Dimensions.get('window').width,
-  },
   headerContainer: {
-    marginTop: 10,
+    marginTop: 20,
     padding: 10,
   },
   headerIndicator: {
@@ -98,12 +94,11 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
   },
   header: {
-    fontSize: 30,
+    fontSize: 25,
     fontWeight: 'bold',
     color: '#fff',
     textAlign: 'center',
     marginTop: 35,
-    
   },
   inputContainer: {
     marginTop: 20,
@@ -115,12 +110,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 25,
   },
-  inputSearch:{
-    padding:10,
-    fontSize:16,
+  inputSearch: {
+    padding: 10,
+    fontSize: 16,
     fontWeight: '500',
     color: 'grey',
-    flex:1,
+    flex: 1,
   },
   buttonSearch: {
     shadowColor: '#222',
