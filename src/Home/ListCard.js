@@ -10,7 +10,7 @@ const Items =({item})=>{
  return(
    <View style={styles.elementsContainer}>
      <View style={styles.imageBox}>
-       <Image style={styles.image}/>
+       <Image source ={{uri:item.image}}style={styles.image}/>
        <View style={styles.innerElements}>
         <View>
         <Text style={styles.elementsName}>{item.name}</Text>
@@ -74,13 +74,13 @@ const styles= StyleSheet.create({
     flex:1,
     borderRadius: 30,
     overflow: 'hidden',
-    backgroundColor: 'pink',
+   
 
   },
   image:{
     width: (W - 20)/2,
     height: (W - 40)/2 + 30,
-    backgroundColor: 'pink',
+   
   },
   elementsContainer:{},
   innerElements:{},

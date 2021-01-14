@@ -6,7 +6,7 @@
     "time": "Jan 2021",
     "price": "₹2,250",
     "priceOriginal": "₹4,2999",
-    "image": ""
+    "image": "https://i.ibb.co/XWV6wkH/IQWyl7-R-Imgur.jpg"
   },
   {
     "id": "2",
@@ -15,7 +15,7 @@
     "time": "Feb 2021",
     "price": "₹2,250",
     "priceOriginal": "₹4,2999",
-    "image": ""
+    "image": "https://i.ibb.co/XWV6wkH/IQWyl7-R-Imgur.jpg"
   },
  
   {
@@ -25,7 +25,7 @@
     "time": "Feb 2021",
     "price": "₹2,250",
     "priceOriginal": "₹4,2999",
-    "image": ""
+    "image": "https://i.ibb.co/XWV6wkH/IQWyl7-R-Imgur.jpg"
   },
 
   {
@@ -35,33 +35,7 @@
     "time": "Feb 2021",
     "price": "₹2,250",
     "priceOriginal": "₹4,2999",
-    "image": ""
-  },
-  {
-    "id": "6",
-    "name": "Delhi",
-    "saleoff": "55%",
-    "time": "Feb 2021",
-    "price": "₹2,250",
-    "priceOriginal": "₹4,2999",
-    "image": ""
-  },
-  {
-    "id": "7",
-    "name": "Delhi",
-    "saleoff": "55%",
-    "time": "Feb 2021",
-    "price": "₹2,250",
-    "priceOriginal": "₹4,2999",
-    "image": ""
-  },
-  {
-    "id": "8",
-    "name": "Delhi",
-    "saleoff": "55%",
-    "time": "Feb 2021",
-    "price": "₹2,250",
-    "priceOriginal": "₹4,2999",
-    "image": ""
+    "image": "https://imgur.com/IQWyl7R"
   }
+ 
 ]

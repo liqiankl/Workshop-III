@@ -7,6 +7,7 @@ import 'react-native-gesture-handler';
 
 import Home from './src/Home';
 import Search from './src/Search';
+import Details from './src/Details';
 
 const Tab = createBottomTabNavigator();
 
@@ -40,7 +41,7 @@ export default function App() {
         }}>
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Search" component={Search} />
-        <Tab.Screen name="Details" component={Blank} />
+        <Tab.Screen name="Details" component={Details} />
         <Tab.Screen name="Notification" component={Blank} />
       </Tab.Navigator>
     </NavigationContainer>
